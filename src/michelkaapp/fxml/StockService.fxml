@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1128.0" stylesheets="@../css/user.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.StockServiceController">
+    <children>
+        <VBox layoutY="15.0" prefHeight="562.0" prefWidth="1132.0">
+            <children>
+                <SplitPane fx:id="pane_center" dividerPositions="0.18584070796460178" focusTraversable="true" prefHeight="562.0" prefWidth="1130.0" VBox.vgrow="ALWAYS">
+                    <items>
+                        <AnchorPane fx:id="pane_gauche" prefHeight="550.0" prefWidth="221.0">
+                            <children>
+                                <VBox layoutX="4.0" layoutY="5.0" prefHeight="268.0" prefWidth="195.0" spacing="10.0">
+                                    <children>
+                              <Button fx:id="logout" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: rgba(160,161,163,147); -fx-border-radius: 50,50,50,50; -fx-background-radius: 50,50,50,50; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Logout_2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </Button>
+                                        <Button fx:id="btn_fiche" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Fiches Techniques" />
+                                        <Button fx:id="btn_carte" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Cartes" />
+                                        <Button fx:id="btn_service" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Stock de Services" />
+                                        <Button fx:id="btn_produit" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Stock de Produits" />
+                                        <Button fx:id="btn_payement" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Caisse" />
+                                    </children>
+                                </VBox>
+                        <VBox layoutX="4.0" layoutY="308.0" prefHeight="103.0" prefWidth="200.0" spacing="10.0" />
+                        <HBox fx:id="admin_bar" layoutX="-2.0" layoutY="521.0" prefHeight="25.0" prefWidth="207.0" spacing="5.0" visible="false">
+                           <children>
+                              <Button fx:id="btn_users" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Utilisateurs" />
+                              <Button fx:id="btn_setting" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Réglages" />
+                              <Button fx:id="btn_traces" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Traces" />
+                           </children>
+                        </HBox>
+                            </children>
+                        </AnchorPane>
+                        <ScrollPane prefHeight="560.0" prefWidth="888.0">
+                            <content>
+                                <AnchorPane id="Content" fx:id="pane_central" minHeight="-1.0" minWidth="-1.0" prefHeight="700.0" prefWidth="942.0">
+                                    <children>
+                                        <Label fx:id="titre_menu" layoutX="36.0" layoutY="14.0" text="Opérations&gt; Stock de Services" />
+                                        <TextField fx:id="zone_recherche" layoutX="14.0" layoutY="44.0" prefHeight="23.0" prefWidth="245.0" promptText="Recherche..." />
+                                        <Button fx:id="btn_rechercher" layoutX="281.0" layoutY="43.0" mnemonicParsing="false" onAction="#optionRecherche" prefHeight="23.0" prefWidth="77.0" text="Rechercher" />
+                                       
+                                        <AnchorPane fx:id="pane_technique" layoutX="36.0" layoutY="81.0" prefHeight="619.0" prefWidth="838.0">
+                                            <children>
+                                    <TableView fx:id="table_view" layoutX="-23.0" layoutY="14.0" prefHeight="331.0" prefWidth="871.0">
+                                      <columns>
+                                          <TableColumn fx:id="type_prestation_col" prefWidth="154.0" text="Type de prestation" />
+                                          <TableColumn fx:id="categorie_col" prefWidth="220.0" text="Catégorie Prestation" />
+                                          <TableColumn fx:id="sous_categorie_col" prefWidth="169.0" text="Sous Catégorie Prestation" />
+                                          <TableColumn fx:id="prestation_col" prefWidth="161.0" text="Prestation" />
+                                          <TableColumn fx:id="prix_prestation_col" prefWidth="166.0" text="Prix" />
+                                      </columns>
+                                    </TableView>
+                                    <AnchorPane fx:id="pane_bas" layoutX="24.0" layoutY="283.0" prefHeight="180.0" prefWidth="824.0">
+                                       <children>
+                                          <Pagination fx:id="pagination" layoutX="199.0" layoutY="75.0" prefHeight="67.0" prefWidth="410.0" />
+                                          <Button fx:id="btn_tarif" layoutX="683.0" layoutY="77.0" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="139.0" text="Dashboard Prestations" />
+                                       </children></AnchorPane>
+                                            </children>
+                                        </AnchorPane>
+                              <AnchorPane fx:id="pane_border" layoutX="379.0" layoutY="24.0" prefHeight="58.0" prefWidth="381.0">
+                                 <children>
+                                    <RadioButton fx:id="type_prestation_rd" layoutX="13.0" layoutY="24.0" mnemonicParsing="false" selected="true" text="Type de prestation">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="toggleGroupe" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="categorie_rd" layoutX="143.0" layoutY="24.0" mnemonicParsing="false" text="Catégorie Prestation" toggleGroup="$toggleGroupe" />
+                                    <RadioButton fx:id="prestation_rd" layoutX="281.0" layoutY="24.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="94.0" text="Prestation" toggleGroup="$toggleGroupe" />
+                                    <Label fx:id="titre_recherche_option" layoutX="20.0" text="Options de recherches" />
+                                 </children>
+                              </AnchorPane>
+                              <Button fx:id="btn_add_service" layoutX="778.0" layoutY="43.0" mnemonicParsing="false" onAction="#buttonListener" text="+Service" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </VBox>
+        <Label layoutY="586.0" text="© Black Star Technologies" />          
+    </children>
+</AnchorPane>

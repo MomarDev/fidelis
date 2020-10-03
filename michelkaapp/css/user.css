@@ -1,0 +1,159 @@
+root { 
+    display: block;
+}
+.root {
+    -fx-background-image: url("../images/background_bordure.png");
+}
+#pane_droite,#pane_gauche{
+    -fx-background-image: url("../images/background.jpg");
+}
+
+.label{
+    -fx-font-size: 12px;
+    /*    -fx-font-weight: bold;*/
+    -fx-text-fill: #333333;
+    /*-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );*/
+}
+#label_close{
+    -fx-font-size: 20px;
+    -fx-text-fill:#fff;
+}
+#label_iconfy{
+    -fx-font-size: 32px;
+    -fx-text-fill: #fff;
+    -fx-position: center;
+}
+.button, .radio-button{
+    -fx-border-radius: 50 50 50 50;
+    -fx-background-radius: 50 50 50 50;
+    -fx-text-fill: black;
+    /*-fx-font-family: "Arial Narrow";*/
+    /*-fx-font-weight: bold;*/
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/	
+}
+#btn_rechercher,#creer_fiche{
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+}
+#btn_rechercher:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+#titre_menu,#titre_recherche{
+    -fx-font-size: 12px;
+    /*    -fx-font-family: "Arial Black";*/
+    -fx-text-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,1,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+.text-field {
+    -fx-border-radius: 50 50 50 50;
+    -fx-background-radius: 50 50 50 50;
+    -fx-text-fill: black;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );	
+}
+.radio-button:hover,.button:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+
+#welcome{
+    -fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+    -fx-fill:#61a2b1;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#btn_fiche{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(104,38,101,202);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-border-radius: 50 50 50 50;
+    -fx-background-radius: 50 50 50 50;	
+}
+#btn_service{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(254,217,35,33);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn_produit{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(238,167,203,220);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn_vente{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(155,95,163,195);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn_carte{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(240,128,19,20);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn_setting{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-background-color: rgba(105,177,227,136);
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+}
+#btn_users{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-background-color: rgba(155,95,163,195);
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+}
+#btn_traces{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-background-color: rgba(193,209,1,43);
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+}
+
+#btn_carte:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+#btn_fiche:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+#btn_service:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+#btn_produit:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+#btn_vente:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+#creer_fiche:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+#btn_setting:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+#btn_users:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+#btn_traces:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+
+#pane_border,#pane_max,#pane_visite,#pane_achat,#pane_email{
+    -fx-border-insets: 10 5 5 5;
+    -fx-border-color: #595960;
+    -fx-border-width: 0.5;
+}
+#titre_recherche_option,#result_carte,#titre_parametre_fenetre,#titre_parametre_achat,#titre_parametre_visite,#titre_parametre_email{
+    -fx-background-color: rgba(244,244,244,160);
+}

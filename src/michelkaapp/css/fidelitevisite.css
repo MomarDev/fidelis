@@ -1,0 +1,23 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    display: block;
+}
+root{
+    display: block;
+}
+.root{
+    -fx-background-image:url("../images/background_bordure.png");
+}
+#second_pane{
+    -fx-background-image:url("../images/old-white-background.jpg");
+}
+#border_pane,#info_border{
+    /*-fx-content-display: top;*/
+    -fx-border-insets: 10 5 5 5;
+    /*-fx-background-color: white;*/
+    -fx-border-color: #595960;
+    -fx-border-width: 0.5;
+}

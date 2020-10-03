@@ -1,0 +1,33 @@
+.mainFxmlClass {
+    -fx-background-image: url("../images/background_bordure.png");
+    display: block;
+}
+#encaissement{
+    -fx-font-size: 25px;
+    -fx-text-fill:#000;
+    -fx-font-weight:bold;
+}
+#conteneur_ventes{
+-fx-background-image: url("../images/background.jpg");
+}
+#second_pane{
+   -fx-background-image: url("../images/background.jpg");
+}
+
+
+.button{
+    -fx-text-fill: #fff;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn_quitter:hover,#btn_quitter_achat:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}
+#btn_enregistrer:hover,#btn_enregistrer_achat:hover{
+    -fx-background-color: linear-gradient(#312ac1,#5f28a8);
+}
+#btn_achat:hover,#btn_retour:hover{
+    -fx-background-color: linear-gradient(#61a2b1, #009688);
+}

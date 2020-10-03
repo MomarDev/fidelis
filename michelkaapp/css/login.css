@@ -1,0 +1,49 @@
+
+#pane_droite{
+    -fx-background-color: linear-gradient(#fff, rgba(235, 165, 16, 0.993))
+}
+#root_pane{
+    display: block;
+    -fx-background-image: url('../images/background_bordure.png');
+}
+#cp_rigth{
+    -fx-background-image: url('../images/background_bordure.png');
+}
+#hbox{
+    -fx-background-image: url(../images/background.jpg);
+}
+.label,#output_label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+#output_label {
+    -fx-text-fill: red;
+}
+#welcome {
+    -fx-font-size: 18px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,1,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+#salon_title{
+    -fx-font-size: 42px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #67c6ad;
+    -fx-effect: innershadow( three-pass-box , rgb(103, 198, 173) , 6, 0.0 , 0 , 2 ); 
+}
+#salon_sous_titre{
+    -fx-fill-width: true;
+    -fx-fill: #ff9933
+}
+#btn_login {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn_login:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}

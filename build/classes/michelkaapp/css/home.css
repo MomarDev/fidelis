@@ -1,0 +1,9 @@
+root { 
+    display: block;
+}
+.root {
+-fx-background-image: url("../images/background_bordure.png");
+}
+#anchor_pane{
+    -fx-background-image: url("../images/background.jpg");
+}

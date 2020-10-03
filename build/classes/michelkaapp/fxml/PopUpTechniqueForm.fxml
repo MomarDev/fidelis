@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="600.0" prefWidth="752.0" stylesheets="@../css/forms.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.PopUpTechniqueFormController">
+   <children>
+      <AnchorPane fx:id="second_pane" layoutY="19.0" prefHeight="560.0" prefWidth="752.0">
+         <children>
+            <Label fx:id="titre_popup" layoutX="14.0" layoutY="6.0" text="Nouvelle Fiche Technique" underline="true" />
+            <GridPane layoutX="96.0" layoutY="44.0" prefHeight="464.0" prefWidth="577.0" styleClass="grid-pane">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="319.0" minWidth="10.0" prefWidth="245.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="469.0" minWidth="10.0" prefWidth="388.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Téléphone portable 2" GridPane.rowIndex="4" />
+                  <TextField fx:id="nomField" promptText="Nom" GridPane.columnIndex="1" />
+                  <TextField fx:id="prenomField" promptText="Prénom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="portable1Field" promptText="Téléphone portable 1" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="portable2Field" promptText="Téléphone portable 2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Numéro téléphone Bureau" GridPane.rowIndex="5" />
+                  <Label text="Numéro téléphone domicile" GridPane.rowIndex="6" />
+                  <Label text="Email" GridPane.rowIndex="7" />
+                  <Label text="Adresse" GridPane.rowIndex="8" />
+                  <Label text="Profession" GridPane.rowIndex="9" />
+                  <Label text="Carte Fidelité" GridPane.rowIndex="10" />
+                  <TextField fx:id="telBureauField" promptText="Numéro téléphone bureau" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="telDomicileField" promptText="Numéro téléphone domicile" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="emailField" promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="adresseField" promptText="Adresse" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <children>
+                        <ComboBox fx:id="professionComboBox" prefHeight="25.0" prefWidth="175.0" promptText="Profession du client" />
+                        <TextField fx:id="professionField" disable="true" prefHeight="25.0" prefWidth="188.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <children>
+                        <ComboBox fx:id="carteFideliteComboBox" prefHeight="25.0" prefWidth="174.0" promptText="Non" />
+                        <TextField fx:id="carteFideliteField" disable="true" prefHeight="25.0" prefWidth="184.0" />
+                     </children>
+                  </HBox>
+                  <ComboBox fx:id="cuirCheveluComboBox" prefHeight="25.0" prefWidth="363.0" promptText="Choisir..." GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <ComboBox fx:id="typeCheveuxComboBox" prefHeight="25.0" prefWidth="363.0" promptText="Choisir..." GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <ComboBox fx:id="densiteCheveuxComboBox" prefHeight="25.0" prefWidth="363.0" promptText="Choisir..." GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <ComboBox fx:id="etatCheveuxComboBox" prefHeight="25.0" prefWidth="363.0" promptText="Choisir..." GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                  <Label text="Cuir chevelu" GridPane.rowIndex="11" />
+                  <Label prefHeight="17.0" prefWidth="221.0" text="Type de cheveux" GridPane.rowIndex="12" />
+                  <Label prefHeight="17.0" prefWidth="218.0" text="Densité" GridPane.rowIndex="13" />
+                  <Label prefHeight="17.0" prefWidth="216.0" text="Etat des cheveux" GridPane.rowIndex="14" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <ComboBox fx:id="listJourComboBox" prefHeight="25.0" prefWidth="180.0" promptText="Jour" />
+                        <ComboBox fx:id="listMoisComboBox" prefHeight="25.0" prefWidth="181.0" promptText="Mois" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="183.0" text="Nom" />
+                        <Label fx:id="label_obligatoire" prefHeight="17.0" prefWidth="45.0" text="*" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="202.0" text="Prénom" />
+                        <Label fx:id="prenomObligartoire" prefHeight="17.0" prefWidth="64.0" text="*" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="178.0" text="Téléphone portable 1" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="184.0" text="Anniversaire" />
+                        <Label fx:id="telObligatoiire" prefHeight="28.0" prefWidth="45.0" text="*" />
+                     </children>
+                  </HBox>
+                  <Label text="Texture de Cheveux" GridPane.rowIndex="15" />
+                  <ComboBox fx:id="textureCheveuxCombox" prefHeight="25.0" prefWidth="360.0" promptText="Choisir..." GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                  <Label text="Famille" GridPane.rowIndex="16" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="16">
+                     <children>
+                        <CheckBox fx:id="Encouple" mnemonicParsing="false" text="En couple" />
+                        <Separator orientation="VERTICAL" prefHeight="28.0" prefWidth="45.0" />
+                        <Label text="Nombre d'enfants" />
+                        <TextField fx:id="nombreEnfant" prefHeight="25.0" prefWidth="114.0" promptText="Nombre d'enfants" text="0" />
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <Button fx:id="btn_annuler" layoutX="564.0" layoutY="524.0" mnemonicParsing="false" onAction="#buttonCliked" text="Quitter sans Valider" />
+            <Button fx:id="btn_enregistrer" layoutX="369.0" layoutY="524.0" mnemonicParsing="false" onAction="#buttonCliked" text="Valider et Quitter" />
+            <Button fx:id="btn_valider_prestation" layoutX="96.0" layoutY="524.0" mnemonicParsing="false" onAction="#buttonCliked" text="Valider et Ajouter une Prestation" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="8.0" layoutY="578.0" text="© Black Star Technologies" />
+   </children>
+</AnchorPane>

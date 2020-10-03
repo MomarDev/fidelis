@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javaFx">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="dist/lib/apache-commons-net.jar"/>
+	<classpathentry kind="lib" path="dist/lib/commons-net-3.3-ftp.jar"/>
+	<classpathentry kind="lib" path="dist/lib/commons-net-3.6.jar"/>
+	<classpathentry kind="lib" path="dist/lib/comp102x.jar"/>
+	<classpathentry kind="lib" path="dist/lib/controlsfx-8.40.14.jar"/>
+	<classpathentry kind="lib" path="dist/lib/core-2.3-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="dist/lib/ftp-client-2.2.0.jar"/>
+	<classpathentry kind="lib" path="dist/lib/ghost4j-0.3.1.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jai_imageio.jar"/>
+	<classpathentry kind="lib" path="dist/lib/javase-2.3-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="dist/lib/javax.mail-1.6.0.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jna.jar"/>
+	<classpathentry kind="lib" path="dist/lib/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jvftp-AWT.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jvftp.jar"/>
+	<classpathentry kind="lib" path="dist/lib/mysql-connector-java-5.1.23-bin.jar"/>
+	<classpathentry kind="lib" path="dist/lib/tess4j.jar"/>
+	<classpathentry kind="lib" path="dist/MichelKaApp.jar"/>
+	<classpathentry kind="lib" path="librairie/apache-commons-net.jar"/>
+	<classpathentry kind="lib" path="librairie/commons-net-3.3-ftp.jar"/>
+	<classpathentry kind="lib" path="librairie/commons-net-3.6.jar"/>
+	<classpathentry kind="lib" path="librairie/comp102x.jar"/>
+	<classpathentry kind="lib" path="librairie/controlsfx-8.40.14.jar"/>
+	<classpathentry kind="lib" path="librairie/core-2.3-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="librairie/ftp-client-2.2.0.jar"/>
+	<classpathentry kind="lib" path="librairie/ghost4j-0.3.1.jar"/>
+	<classpathentry kind="lib" path="librairie/jai_imageio.jar"/>
+	<classpathentry kind="lib" path="librairie/javase-2.3-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="librairie/javax.mail-1.6.0.jar"/>
+	<classpathentry kind="lib" path="librairie/jna.jar"/>
+	<classpathentry kind="lib" path="librairie/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="librairie/jvftp-AWT.jar"/>
+	<classpathentry kind="lib" path="librairie/jvftp.jar"/>
+	<classpathentry kind="lib" path="librairie/mysql-connector-java-5.1.23-bin.jar"/>
+	<classpathentry kind="lib" path="librairie/tess4j.jar"/>
+	<classpathentry kind="lib" path="MichelKaApp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/jar java/zxing-1.0.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/javase-3.3.0.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

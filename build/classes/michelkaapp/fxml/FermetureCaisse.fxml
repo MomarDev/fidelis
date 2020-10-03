@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="701.0" prefWidth="716.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.FermetureCaisse">
+    <stylesheets>
+        <URL value="@../css/paiement.css" />
+    </stylesheets>
+    <children>
+        <AnchorPane fx:id="second_pane" layoutY="14.0" prefHeight="372.0" prefWidth="706.0">
+            <children>
+                <AnchorPane fx:id="pane_conseil" prefHeight="631.0" prefWidth="705.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f5" height="64.0" layoutX="4.0" layoutY="14.0" opacity="0.28" stroke="BLACK" strokeType="INSIDE" width="712.0" />
+                        <Label layoutX="297.0" layoutY="35.0" text="Fermeture caisse">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                        <AnchorPane fx:id="pane_general_" layoutX="-1.0" layoutY="75.0" prefHeight="556.0" prefWidth="694.0">
+                            <children>
+
+
+                                <AnchorPane fx:id="pan_prestation" layoutX="58.0" layoutY="74.0" prefHeight="519.0" prefWidth="650.0">
+                                    <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8cccf73" height="36.0" layoutX="446.0" layoutY="226.0" stroke="#515151" strokeType="INSIDE" width="168.0" />
+                                        <Button fx:id="btn_save" layoutX="500.0" layoutY="487.0" mnemonicParsing="false" onAction="#handlerButton" text="Fermée Caisse" />
+                                        <Button fx:id="btn_quitter" layoutX="22.0" layoutY="487.0" mnemonicParsing="false" onAction="#handlerButton" text="Annuler" />
+                                        <TextArea fx:id="commentaire" layoutX="158.0" layoutY="406.0" prefHeight="79.0" prefWidth="216.0" />
+                                        <Label layoutX="-3.0" layoutY="363.0" text="Operateur:" />
+                                        <Label layoutY="436.0" text="Commentaire" />
+                                        <ComboBox fx:id="operateur" layoutX="160.0" layoutY="359.0" prefWidth="150.0" promptText="Choisir votre nom" />
+                              <Label layoutX="107.0" layoutY="-8.0" text="À" />
+                              <Label fx:id="now" layoutX="133.0" layoutY="-8.0" text="Mardi 10  juin 2010" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8cccf73" height="198.0" layoutX="-1.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="615.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8cccf73" height="299.0" layoutX="-1.0" layoutY="31.0" stroke="#0000009b" strokeType="INSIDE" width="225.0" />
+                                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8cccf73" height="299.0" layoutX="222.0" layoutY="31.0" stroke="#0000009b" strokeType="INSIDE" width="225.0" />
+                              <Line endX="495.0" endY="-1.52587890625E-5" layoutX="118.0" layoutY="117.0" startX="-119.0" />
+                              <Label layoutX="41.0" layoutY="84.0" text="Chiffre d'affaire" />
+                              <Label layoutX="40.0" layoutY="124.0" text="Carte Bancaire" />
+                              <Label layoutX="41.0" layoutY="160.0" text="Espéces" />
+                              <Label layoutX="42.0" layoutY="198.0" text="Chéques" />
+                              <Label layoutX="43.0" layoutY="235.0" text="Attente" textFill="#eb0909" />
+                              <Label fx:id="chiffre_affaire" layoutX="274.0" layoutY="84.0" text="375 220 FCFA" />
+                              <Label fx:id="carte_banque" layoutX="273.0" layoutY="125.0" text="37 220 FCFA" />
+                              <Label fx:id="espece" layoutX="273.0" layoutY="160.0" text="250 000 FCFA" />
+                              <Label fx:id="cheque" layoutX="271.0" layoutY="198.0" text="50 000 FCFA" />
+                              <Label fx:id="attente" layoutX="273.0" layoutY="233.0" text="20 000 FCFA" textFill="#e10a0a" />
+                              <Button fx:id="btn_voir" layoutX="477.0" layoutY="232.0" mnemonicParsing="false" onAction="#handlerButton" text="Voir +" />
+                              <Line endX="506.0" layoutX="107.0" layoutY="261.0" startX="-108.0" stroke="#4d4d4d" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8cccf73" height="70.0" layoutX="445.0" layoutY="260.0" stroke="#515151f5" strokeType="INSIDE" width="168.0" />
+                              <Label layoutX="44.0" layoutY="47.0" text="Fond de caisse " />
+                              <Label fx:id="fond" layoutX="274.0" layoutY="47.0" text="10 000 FCFA" />
+                              <Label layoutX="40.0" layoutY="304.0" text="Somme Totale" />
+                              <Label fx:id="total" layoutX="274.0" layoutY="304.0" text="1 000 000 000 FCFA" />
+                              <Line endX="516.0" layoutX="96.0" layoutY="299.0" startX="-95.0" />
+                              <Label layoutX="40.0" layoutY="272.0" text="Remboursement" textFill="#17874b" />
+                              <Label fx:id="remboursement" layoutX="274.0" layoutY="272.0" text="15 000 FCFA" textFill="#17874b" />
+                                    </children>
+                                </AnchorPane>
+                                <Label layoutX="112.0" layoutY="35.0" prefHeight="17.0" prefWidth="72.0" text="Periode:   De" />
+                                <Label fx:id="date" layoutX="193.0" layoutY="35.0" text="Lundi 31 Janvier 2019" />
+                        <Line endX="311.0" endY="1.52587890625E-5" layoutX="358.0" layoutY="147.0" startX="-300.0" startY="1.52587890625E-5" />
+                                <Line endX="313.0" endY="3.0517578125E-5" layoutX="358.0" layoutY="229.0" startX="-300.0" startY="3.0517578125E-5" />
+                                <Line endX="314.0" endY="-13.0" layoutX="358.0" layoutY="277.0" startX="-300.0" startY="-13.0" />
+
+
+                            </children>
+                        </AnchorPane>
+
+
+                        <ImageView fx:id="imv_logo" fitHeight="36.0" fitWidth="159.0" layoutX="23.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@logo.png" />
+                            </image>
+                        </ImageView>
+
+
+                        <ImageView fx:id="imv_add_achat" fitHeight="23.0" fitWidth="26.0" layoutX="667.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@add.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <Label layoutX="-1.0" layoutY="684.0" text="© Black Star Technologies" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="733.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.PayementController">
+    <stylesheets>
+        <URL value="@../css/paiement.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="second_pane" layoutY="14.0" prefHeight="372.0" prefWidth="706.0">
+         <children>
+            <AnchorPane fx:id="pane_conseil" prefHeight="341.0" prefWidth="704.0">
+               <children>
+                  <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff03" height="49.0" layoutX="36.0" layoutY="185.0" stroke="#00000082" strokeType="INSIDE" width="355.0" />
+                  <Rectangle fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff03" height="192.0" layoutX="39.0" layoutY="260.0" stroke="#00000081" strokeType="INSIDE" width="707.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f5" height="64.0" layoutX="4.0" layoutY="14.0" opacity="0.28" stroke="BLACK" strokeType="INSIDE" width="743.0" />
+                  <AnchorPane fx:id="pane_general_" layoutX="-1.0" layoutY="75.0" prefHeight="427.0" prefWidth="753.0">
+                     <children>
+
+                      <AnchorPane fx:id="caisse_ouverte" prefHeight="413.0" prefWidth="743.0">
+
+                         <AnchorPane fx:id="pan_prestation" layoutX="63.0" layoutY="74.0" prefHeight="339.0" prefWidth="685.0">
+                            <children>
+                               <RadioButton fx:id="radioButton_femme" layoutX="265.0" layoutY="158.0" mnemonicParsing="false" onAction="#actionAge" text="Femme">
+                                  <toggleGroup>
+                                     <ToggleGroup fx:id="toggleGroupe" />
+                                  </toggleGroup>
+                               </RadioButton>
+                               <RadioButton fx:id="radioButton_homme" layoutX="132.0" layoutY="161.0" mnemonicParsing="false" onAction="#actionAge" text="Homme" toggleGroup="$toggleGroupe" />
+
+                               <Label layoutX="74.0" layoutY="206.0" text="Âge:">
+                                  <font>
+                                     <Font size="13.0" />
+                                  </font>
+                               </Label>
+                               <Label layoutX="72.0" layoutY="163.0" prefHeight="19.0" prefWidth="49.0" text="Sexe:">
+                                  <font>
+                                     <Font size="13.0" />
+                                  </font>
+                               </Label>
+                               <HBox fx:id="pane_age" layoutX="133.0" layoutY="202.0" prefHeight="23.0" prefWidth="245.0" visible="true">
+                                  <children>
+                                     <ComboBox fx:id="ageCombo" prefWidth="150.0" promptText="Categorie d'âge" />
+                                  </children>
+                               </HBox>
+                               <Button fx:id="btn_suivant" layoutX="414.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerButtonAchat" text="Suivant" />
+                               <Button fx:id="btn_quitter" layoutX="94.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerButtonAchat" text="Quitter" />
+                               <Label layoutX="326.0" layoutY="-1.0" prefHeight="25.0" prefWidth="91.0" text="Encaisser">
+                                  <font>
+                                     <Font name="Arial" size="15.0" />
+                                  </font></Label>
+                                 <Button fx:id="remboursement" layoutX="551.0" layoutY="52.0" mnemonicParsing="false" onAction="#handlerButtonAchat" prefHeight="23.0" prefWidth="128.0" text="Paiements en Attente" />
+                            </children>
+                         </AnchorPane>
+                         <AnchorPane fx:id="pan_divers" layoutX="39.0" layoutY="183.0" prefHeight="222.0" prefWidth="715.0" visible="false">
+                            <children>
+
+
+                               <ScrollPane layoutX="-5.0" layoutY="-8.0" prefHeight="208.0" prefWidth="715.0" style="-fx-background-color: #363333;">
+                                  <content>
+                                     <AnchorPane prefHeight="400.0" prefWidth="707.0">
+                                        <children>
+                                           <VBox fx:id="conteneur_ventes" prefHeight="400.0" prefWidth="709.0" />
+                                        </children>
+                                     </AnchorPane>
+                                  </content>
+                               </ScrollPane>
+
+                               <Button fx:id="btn_valider" layoutX="539.0" layoutY="205.0" mnemonicParsing="false" onAction="#handlerButtonAchat" prefHeight="25.0" prefWidth="82.0" text="Suivant" />
+
+
+
+
+                            </children>
+                         </AnchorPane>
+                         <Label fx:id="actif" layoutX="39.0" layoutY="25.0" text="Caisse ouverte" />
+
+                         <RadioButton fx:id="radioButton_prestation" layoutX="68.0" layoutY="123.0" mnemonicParsing="false" onAction="#actionAchat" prefHeight="25.0" prefWidth="119.0" selected="true" text="Prestations" toggleGroup="$togglePress">
+                            <font>
+                               <Font name="Arial" size="12.0" />
+                            </font>
+                            <toggleGroup>
+                               <ToggleGroup fx:id="togglePress" />
+                            </toggleGroup>
+                         </RadioButton>
+                         <RadioButton fx:id="radioButton_divers" layoutX="253.0" layoutY="126.0" mnemonicParsing="false" onAction="#actionAchat" text="Divers et Achats" toggleGroup="$togglePress">
+                            <font>
+                               <Font name="Arial" size="12.0" />
+                            </font></RadioButton>
+
+                          
+                       </AnchorPane>
+
+                        <Line endX="451.0" layoutX="288.0" layoutY="65.0" startX="-269.0" stroke="#141414" />
+                        <AnchorPane fx:id="ouvre_caisse" layoutY="69.0" prefHeight="347.0" prefWidth="753.0" visible="false">
+                           <children>
+                              <Label layoutX="200.0" layoutY="84.0" prefHeight="64.0" prefWidth="494.0" text="Pour votre securité  toutes les actions liées à la caisse seront enregistrées">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                              <Label layoutX="200.0" layoutY="14.0" prefHeight="82.0" prefWidth="488.0" text="Bienvenue Salon MicheleKa menu Caisse">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label layoutX="200.0" layoutY="130.0" prefHeight="49.0" prefWidth="434.0" text="La caisse est actuellement fermée">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                              <Label layoutX="296.0" layoutY="218.0" text="Salon MicheleKa pour mieux vous servir" />
+                              <Button fx:id="quit" layoutX="396.0" layoutY="318.0" onAction="#handlerButtonAchat" text="Quitter" />
+                           </children>
+
+                           <Label fx:id="passif" layoutX="35.0" layoutY="-48.0" prefHeight="25.0" prefWidth="91.0" text="Caisse fermée" />
+                        </AnchorPane>
+                        <Button fx:id="ouvrir_caisse" layoutX="642.0" layoutY="30.0" mnemonicParsing="false" onAction="#handlerButtonAchat" prefHeight="23.0" prefWidth="98.0" text="Ouvrir la Caisse" />
+                        <Button fx:id="fermer_caisse" layoutX="642.0" layoutY="31.0" mnemonicParsing="false" onAction="#handlerButtonAchat" prefHeight="25.0" prefWidth="98.0" text="Fermer la Caisse" />
+
+
+
+
+                     </children>
+                  </AnchorPane>
+
+
+            <ImageView fx:id="imv_logo" fitHeight="36.0" fitWidth="159.0" layoutX="23.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+
+
+                   <ImageView fx:id="imv_add_achat" fitHeight="23.0" fitWidth="26.0" layoutX="678.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@add.png" />
+               </image>
+            </ImageView>
+                  <Label layoutX="323.0" layoutY="25.0" text="Caisse">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="vert" fill="#418000" layoutX="19.0" layoutY="108.0" radius="5.0" stroke="#418000" strokeType="INSIDE" />
+                  <Circle fx:id="rouge" fill="#b50707" layoutX="19.0" layoutY="108.0" radius="5.0" stroke="#b50707" strokeType="INSIDE" />
+                  
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="2.0" layoutY="512.0" text="© Black Star Technologies" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-image:url("../images/background_bordure.png");
+}
+#second_pane{
+    -fx-border-insets: 10,5,5,5;
+    -fx-border-color: #595960;
+    -fx-border-width: 0.5;
+    -fx-background-color: rgba(244,244,244,160);
+}
+#titre{
+    -fx-background-color: rgba(244,244,244,160);
+}
+.button{
+    -fx-text-fill: #fff;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn_quitter:hover{
+    -fx-background-color: linear-gradient(#c1322a, #c12a3b);
+}
+#btn_enregistrer:hover{
+    -fx-background-color: linear-gradient(#312ac1,#5f28a8);
+}
+#btn_enregistrer:focused{
+    -fx-background-color: linear-gradient(#312ac1,#5f28a8);
+}

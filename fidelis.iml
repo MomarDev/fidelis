@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/dist/lib/apache-commons-net.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/commons-net-3.3-ftp.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/commons-net-3.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/comp102x.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/controlsfx-8.40.14.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/core-2.3-SNAPSHOT.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/ftp-client-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/ghost4j-0.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/jai_imageio.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/javase-2.3-SNAPSHOT.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/javax.mail-1.6.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/jna.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/junit-4.10.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/jvftp-AWT.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/jvftp.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/mysql-connector-java-5.1.23-bin.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/tess4j.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/MichelKaApp.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/apache-commons-net.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/commons-net-3.3-ftp.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/commons-net-3.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/comp102x.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/controlsfx-8.40.14.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/core-2.3-SNAPSHOT.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/ftp-client-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/ghost4j-0.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/jai_imageio.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/javase-2.3-SNAPSHOT.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/javax.mail-1.6.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/jna.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/junit-4.10.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/jvftp-AWT.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/jvftp.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/mysql-connector-java-5.1.23-bin.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/librairie/tess4j.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/MichelKaApp.jar!/" />
+    <src_description expected_position="1">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="1" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/build/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="apache-commons-net.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/apache-commons-net.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-net-3.3-ftp.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/commons-net-3.3-ftp.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-net-3.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/commons-net-3.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="comp102x.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/comp102x.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="controlsfx-8.40.14.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/controlsfx-8.40.14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="core-2.3-SNAPSHOT.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/core-2.3-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ftp-client-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/ftp-client-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ghost4j-0.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/ghost4j-0.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jai_imageio.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/jai_imageio.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javase-2.3-SNAPSHOT.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/javase-2.3-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.mail-1.6.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/javax.mail-1.6.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jna.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/jna.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="junit-4.10.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/junit-4.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jvftp-AWT.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/jvftp-AWT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jvftp.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/jvftp.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mysql-connector-java-5.1.23-bin.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/mysql-connector-java-5.1.23-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tess4j.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/tess4j.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="MichelKaApp.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/MichelKaApp.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/apache-commons-net.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/apache-commons-net.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/commons-net-3.3-ftp.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/commons-net-3.3-ftp.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/commons-net-3.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/commons-net-3.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/comp102x.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/comp102x.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/controlsfx-8.40.14.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/controlsfx-8.40.14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/core-2.3-SNAPSHOT.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/core-2.3-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/ftp-client-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/ftp-client-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/ghost4j-0.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/ghost4j-0.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/jai_imageio.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/jai_imageio.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/javase-2.3-SNAPSHOT.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/javase-2.3-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/javax.mail-1.6.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/javax.mail-1.6.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/jna.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/jna.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/junit-4.10.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/junit-4.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/jvftp-AWT.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/jvftp-AWT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/jvftp.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/jvftp.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/mysql-connector-java-5.1.23-bin.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/mysql-connector-java-5.1.23-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="librairie/tess4j.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/librairie/tess4j.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="MichelKaApp.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/MichelKaApp.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

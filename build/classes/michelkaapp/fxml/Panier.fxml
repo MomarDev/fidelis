@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.ValidationChequeCadeauControl">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="486.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@logo.png" />
+        </ImageView>
+        <ImageView fitHeight="83.0" fitWidth="149.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@background_app.png" />
+        </ImageView>
+        <Button fx:id="btn_retour" layoutX="35.0" layoutY="496.0" mnemonicParsing="false" onAction="#handlerButton" prefHeight="25.0" prefWidth="80.0" text="Retour" />
+        <Button fx:id="btn_payer" layoutX="681.0" layoutY="488.0" mnemonicParsing="false" onAction="#handlerButton" prefHeight="25.0" prefWidth="80.0" text="Suivant" />
+        <TableView fx:id="table_view" layoutX="4.0" layoutY="93.0" prefHeight="264.0" prefWidth="382.0">
+            <columns>
+                <TableColumn fx:id="prestation_col" prefWidth="217.00001525878906" text="Prestations" />
+                <TableColumn fx:id="prixPres_col" prefWidth="81.0" text="Prix" />
+            <TableColumn fx:id="cc_checker" prefWidth="85.0" text="Chéq.Cadeau" />
+            </columns>
+        </TableView>
+
+        <TableView fx:id="table_view1" layoutX="393.0" layoutY="93.0" prefHeight="264.0" prefWidth="438.0">
+            <columns>
+                <TableColumn fx:id="produit_col" prefWidth="200.0" text="Produit" />
+                <TableColumn fx:id="quantite_col" prefWidth="66.0" text="Quantité" />
+                <TableColumn fx:id="prixPro_col" prefWidth="79.0" text="Prix" />
+            <TableColumn fx:id="prixTotal_col" prefWidth="92.0" text="Total" />
+            </columns>
+        </TableView>
+        <Label layoutX="303.0" layoutY="451.0" text="Montant total:" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff06" height="60.0" layoutX="258.0" layoutY="426.0" stroke="#00000067" strokeType="INSIDE" width="281.0" />
+        <Button fx:id="btn_produit" layoutX="676.0" layoutY="371.0" mnemonicParsing="false" onAction="#handlerButton" text="Ajouter Produit" />
+        <Button fx:id="btn_prestation" layoutX="31.0" layoutY="370.0" mnemonicParsing="false" onAction="#handlerButton" text="Ajouter Prestation" />
+        <Label fx:id="prix_total" layoutX="389.0" layoutY="451.0" prefHeight="17.0" prefWidth="76.0" text="70 000 FCFA">
+            <font>
+                <Font name="Bauhaus 93" size="12.0" />
+            </font>
+        </Label>
+      <Button fx:id="vider" layoutX="722.0" layoutY="45.0" mnemonicParsing="false" onAction="#handlerButton" text="Vider le Panier" textFill="#e10404">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

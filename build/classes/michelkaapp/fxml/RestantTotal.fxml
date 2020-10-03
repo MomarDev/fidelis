@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.RestantTotalControl">
+   <children>
+      <TableView fx:id="table_view" layoutX="62.0" layoutY="83.0" prefHeight="271.0" prefWidth="486.0">
+        <columns>
+          <TableColumn fx:id="col_prenom" prefWidth="75.0" text="Prénom" />
+          <TableColumn fx:id="col_nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="col_phone" prefWidth="75.0" text="Téléphone" />
+            <TableColumn fx:id="col_comment" prefWidth="176.0" text="Commentaire" />
+            <TableColumn fx:id="col_restant" prefWidth="83.0" text="Restant" />
+        </columns>
+      </TableView>
+       <ImageView fx:id="imv_logo" fitHeight="36.0" fitWidth="159.0" layoutX="16.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@logo.png" />
+           </image>
+       </ImageView>
+       <ImageView fitHeight="51.0" fitWidth="94.0" layoutX="503.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+           <Image url="@background_app.png" />
+       </ImageView>
+      <Button fx:id="btn_fermer" layoutX="13.0" layoutY="381.0" mnemonicParsing="false" onAction="#handButton" text="Fermer" />
+      <Label layoutX="200.0" layoutY="34.0" prefHeight="35.0" prefWidth="249.0" text="Liste paiement en attente">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="361.0" prefHeight="14.0" prefWidth="236.0" text="double click sur le client pour faire un remboursement">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.EquivalentEuroControl">
+   <children>
+      <ImageView fx:id="imv_logo" fitHeight="36.0" fitWidth="159.0" layoutX="8.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="90.0" layoutX="400.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@background_app.png" />
+      </ImageView>
+      <Button fx:id="btn_quitter" layoutX="34.0" layoutY="378.0" mnemonicParsing="false" onAction="#handlerButton" text="Quitter" />
+      <Button fx:id="btn_save" layoutX="399.0" layoutY="378.0" mnemonicParsing="false" onAction="#handlerButton" prefHeight="25.0" prefWidth="54.0" text="Payer" />
+      <Label layoutX="40.0" layoutY="129.0" text="taux de conversion Euro/FCFA  :" />
+      <Label fx:id="montantCfa" layoutX="232.0" layoutY="187.0" text="32 Euros" />
+      <Label fx:id="unite_euro" layoutX="233.0" layoutY="129.0" text="500 FCFA" />
+      <Label layoutX="39.0" layoutY="187.0" text="Montant Total en Euro  :" />
+      <ComboBox fx:id="comboMode" layoutX="230.0" layoutY="251.0" prefWidth="150.0" promptText="Choix du mode" />
+      <ComboBox fx:id="comboOp" layoutX="229.0" layoutY="305.0" prefWidth="150.0" promptText="Choisir votre nom" />
+      <Label layoutX="40.0" layoutY="257.0" text="Mode de paiement  :" />
+      <Label layoutX="41.0" layoutY="307.0" text="Operateur  :" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ededed00" height="42.0" layoutX="145.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="178.0" layoutY="80.0" text="Paiement en EURO" />
+   </children>
+</AnchorPane>

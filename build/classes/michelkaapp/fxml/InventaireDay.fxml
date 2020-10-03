@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="74.0" layoutY="90.0" prefHeight="300.0" prefWidth="642.0">
+        <columns>
+          <TableColumn prefWidth="209.0" text="Operateur" />
+          <TableColumn prefWidth="248.0" text="Prestation" />
+            <TableColumn prefWidth="184.0" text="Prix" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

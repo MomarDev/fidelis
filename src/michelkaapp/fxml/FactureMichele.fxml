@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="37.0" layoutY="97.0" text="Label" />
+      <Label layoutX="37.0" layoutY="150.0" text="Label" />
+      <Label layoutX="37.0" layoutY="209.0" text="Label" />
+      <Label layoutX="37.0" layoutY="275.0" text="Label" />
+      <Label layoutX="37.0" layoutY="327.0" text="Label" />
+      <Label layoutX="100.0" layoutY="46.0" prefHeight="36.0" prefWidth="98.0" text="Facture">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

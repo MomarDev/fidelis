@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 nov. 2017, 14:50:13
+    Author     : leyu
+*/
+
+root{
+
+    display: block;
+}
+.root{
+    -fx-background-image: url("../images/background_bordure.png");
+}
+
+#second_pane,#form_titre{
+    -fx-background-image: url("../images/old-white-background.jpg");
+}
+.label{
+    -fx-font-size: 12px;
+    /*-fx-font-weight: bold;*/
+    -fx-text-fill: #1f1f1f;
+    /*-fx-effect: dropshadow( gaussian , rgba(255, 255, 255, 0.774) , 0,0,0,1 );*/
+}
+#label_obligatoire,#prenomObligartoire,#telObligatoiire{
+    -fx-text-fill:red;
+    -fx-font-size: 16px;
+}
+#label_titre_popup_prestation{
+    -fx-font-size: 14px;
+    -fx-underline: true;
+    -fx-focus-traversable: true;
+    /*-fx-text-fill: red;*/
+}
+.grid-pane{
+
+}
+#titre_popup{
+    -fx-font-size: 12px;
+    /*-fx-font-family: "Arial Black";*/
+    -fx-fill: #818181;
+    /*-fx-effect: innershadow( three-pass-box , rgba(0,1,0,0.7) , 6, 0.0 , 0 , 2 );*/
+}
+.button{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn_valider_prestation:hover{
+    -fx-background-color: linear-gradient(#28a828,#11e011);
+}
+#btn_annuler:hover{
+    -fx-background-color: linear-gradient(#c1322a, #c12a3b);
+}
+#btn_enregistrer:hover{
+    -fx-background-color: linear-gradient(#312ac1,#5f28a8);
+}
+
+.bordered-titled-title {
+    -fx-background-color: white;
+    -fx-translate-y: -16;
+}
+
+/*.bordered-titled-border*/ 
+#pane_title_id,#form_prestation,#info_border{
+    /*-fx-content-display: top;*/
+    -fx-border-insets: 10 5 5 5;
+    /*-fx-background-color: white;*/
+    -fx-border-color: #595960;
+    -fx-border-width: 0.5;
+}
+
+.bordered-titled-content {
+    -fx-padding: 26 10 10 10;
+}
+
+#titre_border_produit{
+    -fx-background-image: url("../images/old-white-background.jpg");
+}

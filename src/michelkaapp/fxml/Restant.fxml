@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.RestantControl">
+   <children>
+      <TableView fx:id="table_view" layoutX="4.0" layoutY="79.0" prefHeight="200.0" prefWidth="485.0">
+        <columns>
+          <TableColumn fx:id="col_prenom" prefWidth="75.0" text="Prénom" />
+          <TableColumn fx:id="col_nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="col_phone" prefWidth="75.0" text="Téléphone" />
+            <TableColumn fx:id="col_comment" prefWidth="176.0" text="Commentaire" />
+            <TableColumn fx:id="col_restant" prefWidth="83.0" text="Restant" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_fermer" layoutX="23.0" layoutY="310.0" mnemonicParsing="false" onAction="#handButton" text="Fermer" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="539.0" prefWidth="749.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.PayementController">
+    <stylesheets>
+        <URL value="@../css/paiement.css" />
+    </stylesheets>
+    <children>
+        <AnchorPane fx:id="second_pane" layoutY="14.0" prefHeight="531.0" prefWidth="706.0">
+         <children>
+            <Label layoutX="256.0" layoutY="358.0" text="Salon MicheleKa pour mieux vous servir" />
+             <Label layoutX="102.0" layoutY="194.0" prefHeight="64.0" prefWidth="434.0" text="Pour votre securité toutes actions liées à la caisse sera enregistré">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+             <Label layoutX="103.0" layoutY="124.0" prefHeight="82.0" prefWidth="488.0" text="Bienvenue Salon MicheleKa menu Caisse">
+                 <font>
+                     <Font name="System Bold" size="18.0" />
+                 </font></Label>
+             <Label layoutX="98.0" layoutY="266.0" prefHeight="49.0" prefWidth="434.0" text="La caisse est actuellement fermée">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+
+         </children></AnchorPane>
+        <AnchorPane fx:id="ouvre_caisse" layoutY="69.0" prefHeight="347.0" prefWidth="753.0" visible="false">
+            <children>
+                     </children>
+        </AnchorPane>
+
+    </children>
+</AnchorPane>

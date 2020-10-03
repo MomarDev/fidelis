@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" styleClass="root" stylesheets="@../css/home.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.HomeController">
+   <children>
+      <AnchorPane fx:id="anchor_pane" layoutY="20.0" prefHeight="561.0" prefWidth="1100.0">
+         <children>
+            <Label layoutX="331.0" layoutY="210.0" text="Bienvenue" textFill="WHITE">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+            <Label fx:id="welcome_user" layoutX="550.0" layoutY="351.0" prefHeight="68.0" prefWidth="325.0" text="Michele" textFill="WHITE">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="9.0" layoutY="578.0" text="©" />
+   </children>
+</AnchorPane>

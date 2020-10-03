@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.DetailPrestationController">
+   <children>
+      <VBox>
+         <children>
+            <VBox fx:id="scn" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Salon Michèle Ka">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Client :" />
+                        <Label fx:id="lb_nom_prenom" text="Fatou Ba" />
+                     </children>
+                  </HBox>
+                  <HBox VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Référence carte :" />
+                        <Label fx:id="lb_reference_carte" text="00000" />
+                     </children>
+                  </HBox>
+                  <HBox VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="lb_typePrestation" style="-fx-background-color: #fff;" text="Type de Prestation" />
+                     </children>
+                  </HBox>
+                  <HBox VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="nomPrestation" text="Nom de la prestation" underline="true" />
+                     </children>
+                  </HBox>
+                  <VBox fx:id="v_marque" prefHeight="33.0" prefWidth="192.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="lab_marque" text="Marques:" underline="true" />
+                        <Text fx:id="txt_marques" strokeType="OUTSIDE" strokeWidth="0.0" text="bla bla... bla bla... bla bla... bla bla... " wrappingWidth="219.13671612739563" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="v_montage" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="lab_montage" text="Montage:" underline="true" />
+                        <Text fx:id="txt_montage" strokeType="OUTSIDE" strokeWidth="0.0" text="bla bla ....." wrappingWidth="219.13671875" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="v_technique" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="lab_technique" text="technique:" underline="true" />
+                        <Text fx:id="txt_technique" strokeType="OUTSIDE" strokeWidth="0.0" text="bla bla..." wrappingWidth="219.13671612739563" />
+                     </children>
+                  </VBox>
+                  <VBox VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Observations" underline="true" />
+                        <Text fx:id="txt_observation" strokeType="OUTSIDE" strokeWidth="0.0" text="bla bla... bla bla... bla bla... bla bla... bla bla... bla bla..." wrappingWidth="219.13671612739563" />
+                     </children>
+                  </VBox>
+                  <HBox spacing="20.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Temps de pause:" underline="true" />
+                        <Label fx:id="lb_pause" text="000mn" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="btn_imprimer" mnemonicParsing="false" text="Imprimer" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" HBox.hgrow="NEVER">
+                     <children>
+                        <Button fx:id="btn_fermer" alignment="TOP_LEFT" mnemonicParsing="false" text="Fermer" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

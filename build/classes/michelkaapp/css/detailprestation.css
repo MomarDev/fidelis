@@ -1,0 +1,8 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    /*-fx-background-color: #fff;*/
+    -fx-background-color:transparent;
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1128.0" stylesheets="@../css/user.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.StockProduitController">
+    <children>
+        <VBox layoutY="15.0" prefHeight="562.0" prefWidth="1132.0">
+            <children>
+                <SplitPane fx:id="pane_center" dividerPositions="0.18584070796460178" focusTraversable="true" prefHeight="562.0" prefWidth="1130.0" VBox.vgrow="ALWAYS">
+                    <items>
+                        <AnchorPane fx:id="pane_gauche" prefHeight="550.0" prefWidth="221.0">
+                            <children>
+                                <VBox layoutX="4.0" layoutY="5.0" prefHeight="188.0" prefWidth="195.0" spacing="10.0">
+                                    <children>
+                              <Button fx:id="logout" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: rgba(160,161,163,147); -fx-background-radius: 50,50,50,50; -fx-border-radius: 50,50,50,50; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Logout_2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </Button>
+                                        <Button fx:id="btn_fiche" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Fiches Techniques" />
+                                        <Button fx:id="btn_carte" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Cartes" />
+                                        <Button fx:id="btn_service" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Stock de Services" />
+                                        <Button fx:id="btn_produit" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Stock de Produits" />
+                                        <Button fx:id="btn_payement" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Caisse" />
+                                    </children>
+                                </VBox>
+                        <HBox fx:id="admin_bar" layoutX="-2.0" layoutY="521.0" prefHeight="25.0" prefWidth="207.0" spacing="5.0" visible="false">
+                           <children>
+                              <Button fx:id="btn_users" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Utilisateurs" />
+                              <Button fx:id="btn_setting" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Réglages" />
+                              <Button fx:id="btn_traces" mnemonicParsing="false" onAction="#buttonListener" prefHeight="25.0" prefWidth="200.0" text="Traces" />
+                           </children>
+                        </HBox>
+                            </children>
+                        </AnchorPane>
+                        <ScrollPane prefHeight="560.0" prefWidth="888.0">
+                            <content>
+                                <AnchorPane id="Content" fx:id="pane_central" minHeight="-1.0" minWidth="-1.0" prefHeight="700.0" prefWidth="942.0">
+                                    <children>
+                                        <Label fx:id="titre_menu" layoutX="36.0" layoutY="14.0" text="Opérations&gt; Stock de Produits" />
+                                        <TextField fx:id="zone_recherche" layoutX="14.0" layoutY="44.0" prefHeight="23.0" prefWidth="245.0" promptText="Recherche..." />
+                                        <Button fx:id="btn_rechercher" layoutX="281.0" layoutY="43.0" mnemonicParsing="false" onAction="#rechercheOptions" prefHeight="23.0" prefWidth="77.0" text="Rechercher" />
+                                       
+                                        <AnchorPane fx:id="pane_technique" layoutX="36.0" layoutY="81.0" prefHeight="619.0" prefWidth="838.0">
+                                            <children>
+                                    <TableView fx:id="table_view" layoutX="-23.0" layoutY="22.0" prefHeight="307.0" prefWidth="871.0">
+                                      <columns>
+                                        <TableColumn fx:id="designation_col" prefWidth="75.0" text="Désignation" />
+                                          <TableColumn fx:id="code_col" prefWidth="75.0" text="Code barre" />
+                                          <TableColumn fx:id="marque_col" prefWidth="75.0" text="Marque" />
+                                          <TableColumn fx:id="famille_col" prefWidth="75.0" text="Utilisation" />
+                                          <TableColumn fx:id="sous_famille_col" prefWidth="100.0" text="Sous Marque" />
+                                          <TableColumn fx:id="gamme_col" prefWidth="100.0" text="Gamme" />
+                                          <TableColumn fx:id="stock_col" prefWidth="100.0" text="Stockable" />
+                                          <TableColumn fx:id="prix_col" prefWidth="125.0" text="Prix TTC" />
+                                          <TableColumn fx:id="info_col" prefWidth="145.0" text="Info complémentaire" />
+                                      </columns>
+                                    </TableView>
+                                    <AnchorPane fx:id="pane_bas" layoutX="24.0" layoutY="283.0" prefHeight="180.0" prefWidth="824.0">
+                                       <children>
+                                          <Pagination fx:id="pagination" layoutX="170.0" layoutY="90.0" prefHeight="52.0" prefWidth="415.0" />
+                                          <Button fx:id="supprimer" layoutX="747.0" layoutY="52.0" mnemonicParsing="false" text="Supprimer" />
+                                          <Button fx:id="btn_dash" layoutX="585.0" layoutY="52.0" mnemonicParsing="false" onAction="#buttonListener" text="Dashboard Produits" visible="false" />
+                                       </children></AnchorPane>
+                                            </children>
+                                        </AnchorPane>
+                              <AnchorPane fx:id="pane_border" layoutX="368.0" layoutY="22.0" prefHeight="60.0" prefWidth="248.0">
+                                 <children>
+                                    <RadioButton fx:id="designation_rd" layoutX="9.0" layoutY="31.0" mnemonicParsing="false" text="Désignation">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="toggleGroupe" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="marque_rd" layoutX="104.0" layoutY="31.0" mnemonicParsing="false" text="Marque" toggleGroup="$toggleGroupe" />
+                                    <RadioButton fx:id="code_rd" layoutX="174.0" layoutY="31.0" mnemonicParsing="false" selected="true" text="Code" toggleGroup="$toggleGroupe" />
+                                    <Label fx:id="titre_recherche_option" layoutX="17.0" layoutY="1.0" text="Options de recherches" />
+                                 </children>
+                              </AnchorPane>
+                              <Button fx:id="btn_add_produit" layoutX="624.0" layoutY="55.0" mnemonicParsing="false" onAction="#buttonListener" text="+Produit" />
+                              <Button fx:id="btn_add_stock" layoutX="694.0" layoutY="56.0" mnemonicParsing="false" onAction="#buttonListener" text="+Stock" />
+                              <Button fx:id="btn_sup_stock" layoutX="757.0" layoutY="56.0" mnemonicParsing="false" onAction="#buttonListener" text="-Stock" />
+                              <Button fx:id="btn_inventaire" disable="true" layoutX="815.0" layoutY="55.0" mnemonicParsing="false" onAction="#buttonListener" text="Inventaire" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </VBox>
+        <Label layoutY="586.0" text="© Black Star Technologies" />          
+    </children>
+</AnchorPane>

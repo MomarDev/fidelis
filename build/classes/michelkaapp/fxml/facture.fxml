@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane_general" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="michelkaapp.fxml.FactureControl">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="250.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+          <Image url="@logo.png" />
+      </ImageView>
+      <Label layoutX="28.0" layoutY="25.0" text="Date:" />
+      <Label layoutX="146.0" layoutY="87.0" prefHeight="31.0" prefWidth="128.0" text="Facture">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="371.0" text="Montant total:">
+         <font>
+             <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="175.0" layoutX="180.0" layoutY="362.0" startX="-126.0" />
+      <Label fx:id="prix_total" layoutX="214.0" layoutY="375.0" text="50.000 FCFA" />
+      <Button fx:id="btn_imprimer" layoutX="11.0" layoutY="406.0" mnemonicParsing="false" style="-fx-background-color: blue;" text="Valider paiement et imprimer ticket" textFill="WHITE" />
+      <Button fx:id="btn_annuler" layoutX="393.0" layoutY="403.0" mnemonicParsing="false" style="-fx-background-color: #999483;" text="Annuler" textFill="WHITE" />
+      <Label fx:id="date" layoutX="63.0" layoutY="26.0" text="31/011994" />
+
+     
+
+
+   </children>
+</AnchorPane>

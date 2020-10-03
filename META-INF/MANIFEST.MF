@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Implementation-Title: MichelKaApp
+Implementation-Version: 1.0
+Permissions: sandbox
+Codebase: *
+JavaFX-Version: 8.0
+Class-Path: lib/apache-commons-net.jar lib/commons-net-3.3-ftp.jar lib
+ /commons-net-3.6.jar lib/comp102x.jar lib/controlsfx-8.40.14.jar lib/
+ core-2.3-SNAPSHOT.jar lib/ftp-client-2.2.0.jar lib/ghost4j-0.3.1.jar 
+ lib/jai_imageio.jar lib/javase-2.3-SNAPSHOT.jar lib/javax.mail-1.6.0.
+ jar lib/jna.jar lib/junit-4.10.jar lib/jvftp-AWT.jar lib/jvftp.jar li
+ b/mysql-connector-java-5.1.23-bin.jar lib/tess4j.jar
+Created-By: JavaFX Packager
+Implementation-Vendor: leyu
+Main-Class: michelkaapp.MichelKaApp
+

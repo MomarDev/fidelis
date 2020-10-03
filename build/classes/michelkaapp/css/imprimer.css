@@ -1,0 +1,31 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    display: block;
+    -fx-background-image: url("../images/background_bordure.png");
+}
+#second_pane{
+    -fx-background-image: url("../images/old-white-background.jpg");
+
+}
+#pane_header,#pane_body{
+    -fx-background-color: #fff;
+    /*-fx-border-insets: 10 5 5 5;*/
+    /*-fx-border-color: #595960;*/
+    /*-fx-border-width: 0.5;*/
+}
+.button{
+    -fx-text-fill: #fff;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#btn_quitter:hover{
+    -fx-background-color: linear-gradient(#c1322a, #c12a3b);
+}
+#btn_enregistrer:hover{
+    -fx-background-color: linear-gradient(#312ac1,#5f28a8);
+}
